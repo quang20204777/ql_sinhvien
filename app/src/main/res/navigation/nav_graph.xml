@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/studentListFragment">
+
+    <fragment
+        android:id="@+id/addStudentFragment"
+        android:name="com.hust.edu.vn.studentmanagement.AddStudentFragment"
+        android:label="fragment_add_student"
+        tools:layout="@layout/fragment_add_student">
+        <action
+            android:id="@+id/action_addStudentFragment_to_studentListFragment"
+            app:destination="@id/studentListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentListFragment"
+        android:name="com.hust.edu.vn.studentmanagement.StudentListFragment"
+        android:label="fragment_student_list"
+        tools:layout="@layout/fragment_student_list">
+        <action
+            android:id="@+id/action_studentListFragment_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
+        <action
+            android:id="@+id/action_studentListFragment_to_updateStudentFragment"
+            app:destination="@id/updateStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateStudentFragment"
+        android:name="com.hust.edu.vn.studentmanagement.UpdateStudentFragment"
+        android:label="fragment_update_student"
+        tools:layout="@layout/fragment_update_student">
+        <action
+            android:id="@+id/action_updateStudentFragment_to_studentListFragment"
+            app:destination="@id/studentListFragment" />
+    </fragment>
+</navigation>

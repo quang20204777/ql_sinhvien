@@ -1,0 +1,13 @@
+<resources>
+    <string-array name="province">
+        <item>Hà Nội</item>
+        <item>Hồ Chí Minh</item>
+        <item>Nam Định</item>
+        <item>Thái Bình</item>
+        <item>Hưng Yên</item>
+        <item>Hòa Bình</item>
+        <item>Bắc Ninh</item>
+        <item>Hải Phòng</item>
+        <item>Thái Nguyên</item>
+    </string-array>
+</resources>
